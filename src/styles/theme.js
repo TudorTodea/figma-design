@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme, lighten } from "@mui/material";
 
 export const Colors = {
     primary: "#5f2c3e",
@@ -36,13 +36,5 @@ const theme = createTheme({
         },
     },
 
-    components: {
-        MuiButton: {
-            defaultProps: {
-                disableRipple: true,
-                disableElevation: true,
-            },
-        },
-    },
 });
 export default theme;

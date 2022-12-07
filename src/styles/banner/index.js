@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import theme, { Colors } from "../theme";
 
@@ -54,4 +54,15 @@ export const BannerDescription = styled(Typography)(({ theme }) => ({
         letterSpacing: 1.15,
         marginBottom: "1.5em"
     }
+}))
+
+export const BannerShopButton = styled(Button)(({ theme }) => ({
+    padding: "20px 0px",
+    color: Colors.white,
+    fontWeight: "bold",
+    fontSize: "16px",
+    [theme.breakpoints.down("sm")]: {
+        padding: "10px 0px",
+        fontSize: "14px",
+    },
 }))

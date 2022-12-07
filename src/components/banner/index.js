@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/system";
-import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerTtitle } from '../../styles/banner';
+import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerShopButton, BannerTtitle } from '../../styles/banner';
 export const Banner = () => {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('md'));
@@ -21,6 +21,7 @@ export const Banner = () => {
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </BannerDescription>
+                <BannerShopButton variant='contained' >Shop Now</BannerShopButton>
             </BannerContent>
         </BannerContainer>
     )
